@@ -6,7 +6,7 @@ import os
 
 idem_config=IdempotencyConfig(event_key_jmespath="body")
 jls_extract_var = os.environ['IDEMPOTENT_TABLE']
-print (jls_extract_var)
+print ('Idempotency Table Name: ' + jls_extract_var)
 persistence_layer = DynamoDBPersistenceLayer(table_name=jls_extract_var)
 
 def test_insert():
@@ -16,7 +16,7 @@ def test_insert():
 
 
 @idempotent(config=idem_config, persistence_store=persistence_layer)
-@idempotent(persistence_store=persistence_layer)
+# @idempotent(persistence_store=persistence_layer)
 def lambda_handler(event, context):
     # payment = create_subscription_payment(
     #     user=event['user'],
