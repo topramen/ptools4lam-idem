@@ -1,0 +1,10 @@
+version = 0.1
+[rmenon1]
+[rmenon1.deploy]
+[rmenon1.deploy.parameters]
+stack_name = "ptools4lam-idem"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1dllk8q9yq4nt"
+s3_prefix = "ptools4lam-idem"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"

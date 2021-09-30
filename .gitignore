@@ -306,7 +306,8 @@ TMP_CHANGELOG.md
 docs/.cache/
 docs/public
 node_modules
-aws-lambda-powertools-python/
 api/
 site/
 !404.html
+aws-lambda-powertools-python/
+sam-app/
