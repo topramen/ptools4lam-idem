@@ -5,6 +5,7 @@
 codeuri = "/Users/raje9352/ptools4lam-idem/hello_world"
 runtime = "python3.8"
 source_md5 = ""
+architecture = "x86_64"
 packagetype = "Zip"
 functions = ["HelloWorldFunction"]
 
